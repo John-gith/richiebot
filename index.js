@@ -4,12 +4,12 @@ var config = require('./configTwit');
 var T = new Twit(config);
 var CronJob = require('cron').CronJob;
 
-const myAccount = '1500224900463742979'; //Ur account to avoid replying to yourself
-var statusTweet = `I have noticed a new banking protocol on the solana blockchain. It's a very interesting project with a lot of potential to be the next successor in the DeFi realm. They also merge with web3. Check @trush_io`; //Add your tweet here
+const myAccount = '1446220334353506311'; //Ur account to avoid replying to yourself
+var statusTweet = `@trush_io has a lot of potential to be the future of finance! Great financial products on the road! Check them out! :D`; //Add your tweet here
 var isRunning = false;
-var hashtags = ['#defi', '#solana', '#airdrop' ,'#crypto' ,'#web3' , '#metaverse'];
+var hashtags = ['#DeFi'];
 
-var job = new CronJob('*/10 * * * *', function () {
+var job = new CronJob('*/15 * * * *', function () {
     if (isRunning == false) {
         makeTweet();
         isRunning = true;
